@@ -1,5 +1,7 @@
-# Meu Portfólio
+<div align="center">
+  <h1>Meu Portfólio</h1>
+  
+  <h3><a href="https://aikoandre-portfolio.vercel.app/">aikoandre</a></h3>
 
-### [aikoandre](https://aikoandre-portfolio.vercel.app/)
-
-<img src="dev.png" width="300" height="100">
+  <img src="public/dev.png" width="300" height="100">
+</div>
