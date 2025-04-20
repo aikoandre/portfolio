@@ -5,3 +5,15 @@
 
   <img src="public/dev.png" style="width: 600px; height: auto;">
 </div>
+
+Esse site foi contruído utilizando as seguintes tecnologias:
+
+- Next.js
+- React
+- Tailwind CSS
+- Frame Motion
+
+## Recursos
+
+✨ Animações por todo o site
+🖼️ Design moderno
