@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState("sobre-mim");
@@ -42,7 +42,6 @@ const Header = () => {
         const projetos = document.getElementById("projetos");
 
         if (sobreMim && projetos) {
-          const sobreMimRect = sobreMim.getBoundingClientRect();
           const projetosRect = projetos.getBoundingClientRect();
 
           if (projetosRect.top <= 100) {

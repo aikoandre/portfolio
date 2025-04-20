@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  SiNextdotjs,
-  SiReact,
-  SiTypescript,
-  SiTailwindcss,
-  SiFramer,
-} from "react-icons/si";
+import { SiNextdotjs, SiReact, SiTailwindcss, SiFramer } from "react-icons/si";
 
 export default function Footer() {
   const technologies = [
