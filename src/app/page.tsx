@@ -71,7 +71,10 @@ export default function Home() {
           </motion.div>
         </section>
 
-        <section id="projetos" className="mt-20 md:mt-40 mb-50">
+        <section
+          id="projetos"
+          className="mt-20 md:mt-40 sm:mb-20 md:mb-50 lg:mb-50"
+        >
           <motion.h1
             className="text-5xl md:text-6xl lg:text-7xl font-bold accent-color-1 mb-4 text-right w-full  font-poppins"
             initial={{ y: 50, opacity: 0 }}
