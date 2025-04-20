@@ -15,5 +15,5 @@ Esse site foi contruído utilizando as seguintes tecnologias:
 
 ## Recursos
 
-✨ Animações por todo o site
-🖼️ Design moderno
+<p>✨ Animações por todo o site</p>
+<p>🖼️ Design moderno</p>
