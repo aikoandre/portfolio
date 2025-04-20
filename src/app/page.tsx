@@ -6,8 +6,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-gray-900">
-      <div className="max-w-6xl mx-auto w-full px-6 pt-28">
+    <main className="flex min-h-screen flex-col bg-gray-900 overflow-x-hidden">
+      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 pt-28">
         <section id="sobre-mim" className="w-full mt-14">
           <motion.p
             className="text-xl font-bold text-gray-300 accent-color-2"
@@ -19,7 +19,7 @@ export default function Home() {
             SOU UM
           </motion.p>
           <motion.h1
-            className="text-6xl lg:text-7xl font-bold accent-color-1 mb-4 max-w-[700px] font-poppins"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold accent-color-1 mb-4 max-w-[700px] font-poppins"
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.3 }}
@@ -73,7 +73,7 @@ export default function Home() {
 
         <section id="projetos" className="mt-20 md:mt-40 mb-50">
           <motion.h1
-            className="text-6xl lg:text-7xl font-bold accent-color-1 mb-4 text-right w-full  font-poppins"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold accent-color-1 mb-4 text-right w-full  font-poppins"
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.3 }}
