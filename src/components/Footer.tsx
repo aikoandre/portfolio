@@ -12,7 +12,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-800 mt-20 p-4 md:p-6">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col items-center">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col items-center mb-4 md:mb-0">
         <h2 className="text-gray-300 text-2xl font-bold mb-4">
           Construído com:
         </h2>

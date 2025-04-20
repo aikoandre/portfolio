@@ -7,8 +7,11 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-gray-900 overflow-x-hidden">
-      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 pt-28">
-        <section id="sobre-mim" className="w-full mt-14">
+      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 pt-16 sm:pt-20 md:pt-28">
+        <section
+          id="sobre-mim"
+          className="w-full -mt-2 sm:mt-6 md:mt-10 lg:mt-12"
+        >
           <motion.p
             className="text-xl font-bold text-gray-300 accent-color-2"
             initial={{ y: 50, opacity: 0 }}
@@ -111,7 +114,7 @@ export default function Home() {
                 Elyndra Bot
               </motion.h2>
               <motion.div
-                className="bg-gray-800 p-6 rounded-xl shadow-lg mb-4 w-full 
+                className="bg-gray-800 p-6 rounded-xl shadow-lg mb-4 w-full
                 transition-all duration-300 ease-in-out 
                 hover:-translate-y-1 hover:scale-105"
                 initial={{ x: -50, opacity: 0 }}
@@ -163,7 +166,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}
             >
               <motion.div
-                className="relative w-full max-w-[450px] translate-y-15 mb-20"
+                className="relative w-[350px] md:w-full max-w-[450px] translate-y-15 mb-20"
                 initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.1 }}
