@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* Dark theme colors by default */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --accent-color-1: #5465ff;
+  --accent-color-2: #75c1ff;
+}
+
+.accent-color-1 {
+  color: var(--accent-color-1);
+}
+.accent-color-2 {
+  color: var(--accent-color-2);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  transition: transform 0.3s ease-in-out;
+}
+.hide-header {
+  transform: translateY(-100%);
+}
