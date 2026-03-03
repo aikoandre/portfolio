@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Menu from "@/components/Menu";
+import { LanguageProvider } from "@/context/LanguageContext";
+import { ActiveSectionProvider } from "@/context/ActiveSectionContext";
 
 export const metadata: Metadata = {
-  title: "André Luiz | Dev",
-  description: "Portfólio de André Luiz",
+  title: "André Luiz",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -14,18 +17,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <head>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </head>
-      {/* Apply dark theme styles directly */}
-      <body className="flex flex-col min-h-screen bg-gray-900 text-gray-100 overflow-x-hidden">
-        <Header />
-        <main className="flex-grow pt-20">{children}</main>
-        <Footer />
+      <body className="h-screen overflow-hidden bg-[#050505] text-white">
+        <LanguageProvider>
+          <ActiveSectionProvider>
+            <Menu />
+            <main className="h-full">{children}</main>
+          </ActiveSectionProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

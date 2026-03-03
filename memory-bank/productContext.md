@@ -1,21 +1,21 @@
 # Product Context
 
 ## Why This Project Exists
-This is the second version of André's portfolio. The original (`old/`) was a plain HTML/CSS/JS site. The current version is a full Next.js rebuild with modern tooling, animations, and component architecture.
+Personal developer portfolio for André Luiz — second version. The original (`old/`) was plain HTML/CSS/JS. The current version is a full Next.js rebuild with modern tooling and a polished design inspired by Grok's dark aesthetic.
 
 ## Problems It Solves
-- Provides a professional online presence for a developer
-- Demonstrates technical skills through the stack choices themselves (Next.js, TypeScript, Framer Motion, Tailwind)
+- Professional online presence for a Data Analyst / AI enthusiast
+- Demonstrates technical depth through the stack itself (Next.js, TypeScript, Framer Motion, Tailwind)
 
 ## How It Should Work
-1. User lands on the page → animated "Sobre Mim" section greets them
-2. Header has a pill-style switch between "Sobre Mim" and "Projetos" sections
-3. Smooth scroll to sections; active section is tracked and highlighted in header
-4. Projects section shows cards with descriptions, tech tags, and project images
-5. Footer shows the tech stack used to build the site
+1. User lands on the **Intro** page — typewriter cycles through role titles, bio below
+2. Scroll (or tap nav) snaps to **Projects** — grid of project cards with images
+3. Scroll to **Contact** — social links (GitHub, LinkedIn), resume placeholder
+4. Bottom pill nav always visible: language toggle (EN / PT-BR) + section links
+5. Left-side bullet dots show which page the user is on (desktop)
 
 ## User Experience Goals
-- Dark, clean aesthetic (gray-900 background, blue accent colors)
-- Fluid entrance animations using Framer Motion (`whileInView`)
-- Mobile-first responsive layout
-- No horizontal scroll overflow
+- Near-black background, cyan-blue (`#00B4D8`) accent — clean Grok-like aesthetic
+- Snap-scroll for a focused, page-by-page feel
+- Mobile-first: animations use `whileInView` / `whileTap` instead of hover
+- Bilingual (EN / PT-BR), toggled from the nav pill

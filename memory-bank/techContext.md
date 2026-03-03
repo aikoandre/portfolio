@@ -9,22 +9,25 @@
 | Styling | Tailwind CSS | ^4 |
 | Animations | Framer Motion | ^12.7.4 |
 | Icons | react-icons | ^5.5.0 |
-| Runtime | Node.js | (project default) |
-
-## Dev Dependencies
-- `@tailwindcss/postcss` ^4
-- `eslint` ^9 + `eslint-config-next`
-- TypeScript type definitions for React/Node
 
 ## Fonts
-- **Poppins** (Google Fonts) — used for headings (`.font-poppins`, `font-bold`)
-- **Inter** (Google Fonts) — used for body text (default `body` font)
+- **Poppins** (Google Fonts) — headings (`.font-poppins`)
+- **Inter** (Google Fonts) — body text (default)
+
+## Color Palette
+| Variable | Value | Usage |
+|---|---|---|
+| `--background` | `#050505` | Page background |
+| `--surface` | `#0f0f0f` | Cards, nav pill |
+| `--border` | `#1f1f1f` | Borders |
+| `--text-muted` | `#888888` | Secondary text |
+| `--accent` | `#00B4D8` | Cyan-blue accent, highlights, cursor |
 
 ## Config Files
-- `next.config.ts` — empty (no custom config yet)
-- `tailwind.config.ts` — present (likely default)
-- `postcss.config.mjs` — for Tailwind v4 PostCSS plugin
-- `tsconfig.json` — standard Next.js TypeScript config; `@/` path alias resolves to `src/`
+- `next.config.ts` — empty (no custom config)
+- `tailwind.config.ts` — present (default)
+- `postcss.config.mjs` — Tailwind v4 PostCSS plugin
+- `tsconfig.json` — `@/` alias resolves to `src/`
 
 ## Development
 ```bash
@@ -34,4 +37,7 @@ npm run start   # production server
 ```
 
 ## Deployment
-Vercel (inferred from project type and developer history)
+Vercel
+
+## .gitignore Additions
+- `/memory-bank` — not committed to repo

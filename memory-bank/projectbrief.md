@@ -4,16 +4,19 @@
 André Luiz — Personal Portfolio
 
 ## Purpose
-A personal developer portfolio website for André Luiz, showcasing identity, skills, and projects.
+A personal portfolio website for André Luiz showcasing his identity as a Data Analyst / AI Enthusiast and his projects.
 
 ## Core Requirements
-- Present the developer's identity (name, title, bio)
-- Showcase projects with descriptions and tech stacks
-- Provide links to GitHub and LinkedIn
+- Present the developer's identity (typewriter role titles, bio)
+- Showcase projects in a responsive grid with images
+- Provide links to GitHub and LinkedIn (in Contact section)
+- Resume download in both languages (EN + PT-BR) — coming soon
+- Bilingual: English (default) and Brazilian Portuguese
 - Responsive design (mobile → desktop)
-- Smooth scroll navigation with animated section transitions
+- Snap-scroll page-by-page navigation
 
 ## Scope
-- Single-page application (SPA) with two main sections: "Sobre Mim" and "Projetos"
-- Currently one project featured: **Elyndra Bot** (AI Telegram Bot in Python)
-- Deployed via Vercel (inferred from project structure and old version)
+- Three snap-scroll pages: **Intro**, **Projects**, **Contact**
+- Currently one project: **Data Delivery** (ETL + Data Warehouse + Streamlit dashboard)
+- Bottom floating pill nav with language toggle
+- Deployed on Vercel
