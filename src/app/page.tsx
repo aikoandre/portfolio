@@ -26,7 +26,9 @@ const translations = {
       "A complete ETL pipeline and Data Warehouse built with Python, PostgreSQL and Docker, featuring an interactive executive dashboard powered by Streamlit.",
     contactTitle: "Contact",
     contactSubtitle: "Let's work together.",
-    resumeNote: "Resume available in both languages — coming soon.",
+    resumeNote: "CV currently available in Portuguese only — English version coming soon.",
+    cvLabel: "Download CV",
+    cvNote: "(Portuguese)",
   },
   "PT-BR": {
     greeting: "SOU",
@@ -49,7 +51,9 @@ const translations = {
       "Um pipeline ETL completo e Data Warehouse construído com Python, PostgreSQL e Docker, com um dashboard executivo interativo desenvolvido em Streamlit.",
     contactTitle: "Contato",
     contactSubtitle: "Vamos trabalhar juntos.",
-    resumeNote: "Currículo disponível em ambos os idiomas — em breve.",
+    resumeNote: "Currículo disponível em Português.",
+    cvLabel: "Baixar Currículo",
+    cvNote: "",
   },
 };
 
@@ -179,11 +183,11 @@ export default function Home() {
             <span className="text-[#00B4D8]">{t.projectsSubtitleHighlight}</span>
           </motion.p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {projects.map((project, i) => (
               <motion.div
                 key={project.id}
-                className="bg-[#0f0f0f] border border-[#1f1f1f] rounded-2xl overflow-hidden"
+                className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.375rem)] bg-[#0f0f0f] border border-[#1f1f1f] rounded-2xl overflow-hidden"
                 initial={{ y: 40, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.1 }}
@@ -287,15 +291,26 @@ export default function Home() {
             </a>
           </motion.div>
 
-          <motion.p
-            className="text-[#444] text-sm border border-[#1f1f1f] rounded-full px-6 py-3 inline-block"
+          <motion.div
+            className="flex flex-col items-center gap-3"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
           >
-            {t.resumeNote}
-          </motion.p>
+            <a
+              href="/Andre_CV_Analista_de_Dados_PT.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#00B4D8]/10 border border-[#00B4D8]/40 text-[#00B4D8] hover:bg-[#00B4D8]/20 transition-all duration-200 rounded-full px-6 py-3 text-sm font-medium hover:-translate-y-1"
+            >
+              {t.cvLabel}
+              {t.cvNote && <span className="text-[#00B4D8]/70">{t.cvNote}</span>}
+            </a>
+            <p className="text-[#444] text-xs">
+              {t.resumeNote}
+            </p>
+          </motion.div>
         </div>
       </section>
     </div>
